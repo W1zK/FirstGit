@@ -14,6 +14,6 @@ public class continueExampl {
 
 
         System.out.println("Sum:" + sum);
-         
+
     }
 }
