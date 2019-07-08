@@ -1,7 +1,5 @@
 package lesson2;
 
-import com.sun.tools.attach.AgentInitializationException;
-
 import java.util.Scanner;
 
 public class HomeWork1 {
