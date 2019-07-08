@@ -1,14 +1,16 @@
 package FXExampl;
+import com.sun.javafx.css.Size;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
+import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class MainFX extends Application {
+public class MainFXWindow extends Application {
 
     private static final int WIDTH = 1366;
     private static final int HEIGHT = 768;
@@ -37,6 +39,8 @@ public class MainFX extends Application {
         Text text = new Text("HELLO WORLD");
         text.setTranslateX(1000);
         text.setTranslateY(500);
+        Font font = new Font(35);
+        text.setFont(font);
  //------------------TEXTFIELD------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------------------
         TextField textIn = new TextField("100");
@@ -54,13 +58,13 @@ public class MainFX extends Application {
         button.setTranslateY(100);
 
 
-        button.setOnMouseClicked((event) -> {
+
+        button.setOnMouseClicked((event -> {
             String number = textIn.getText();
-            String oldText = text.getText();
-            text.setText(oldText + "\n" + number);
+            String oldText = text.getText();            text.setText(oldText + "\n" + number);
 
 //            root.getChildren().addAll(text2);
-        });
+        }));
 
         root.getChildren().addAll(button, text, textIn);
 
@@ -68,7 +72,7 @@ public class MainFX extends Application {
 
 
     }
- 
+
 
     @Override
     public void start(Stage primaryStage) throws Exception {
