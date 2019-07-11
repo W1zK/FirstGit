@@ -13,7 +13,8 @@ public class HomeWork1 {
         String LastName = scanner.nextLine();
         //Возраст
         System.out.println("Введите ваш возраст:");
-        String age = scanner.nextLine();
+        int age = scanner.nextInt();
+        scanner.nextLine();
         //Дата рождения
         System.out.println("Введите ваш город рождения:");
         String firstCity = scanner.nextLine();
@@ -29,7 +30,7 @@ public class HomeWork1 {
         System.out.println("-----");
         System.out.println("----- Person: " + Name + " " + LastName);
         System.out.println("-----");
-        System.out.println("----- Gender: " + gender + ", age: " + age);
+        System.out.println("----- Gender: " + gender + ", age: " + (age - 108));
         System.out.println("-----");
         System.out.println("----- Location: from - " + firstCity + ", current - " + city);
         System.out.println("-----");
