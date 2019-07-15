@@ -1,6 +1,5 @@
 package FXExampl;
 
-import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -76,8 +75,7 @@ public class PaintFX extends Application {
         button.setTranslateY(10);
         button.setOnAction((event) -> {
             circlesRoot.getChildren().clear();
-            draw(circlesRoot);
-        });
+            draw(circlesRoot);});
         root.getChildren().addAll(button);
     }
 
