@@ -13,10 +13,12 @@ public class AtomicExample {
     };
     static AtomicInteger atomicPage = new AtomicInteger(0);
     static Runnable onUpdate = () -> {
-        System.out.println(book[x]);
+
     };
     public static void main(String[] args) {
+
         Scanner scaner = new Scanner(System.in);
+
         while (true) {
             System.out.println("type page");
             int page = scaner.nextInt();

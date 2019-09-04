@@ -1,6 +1,6 @@
 package MethodExampl;
 
-public class Recurs {
+public class    Recurs {
     //    static String printNumbers(int n) {
 //        if (n <= 0) return "";
 //
